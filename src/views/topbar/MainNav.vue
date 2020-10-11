@@ -1,7 +1,7 @@
 <template>
   <div class="main-nav">
     <ol
-      v-for="(nav, index) in navs"
+      v-for="(nav, index) in selfNav"
       :key="index"
       :style="navStyle(nav)"
       @click="changeNav(nav)"
@@ -15,26 +15,15 @@
 
 <script>
 export default {
+  props: {
+    navs: {
+      type: Array,
+      default: () => [],
+    },
+  },
   data() {
     return {
-      navs: [
-        {
-          name: "zndd",
-          title: "智能调度",
-        },
-        {
-          name: "klfx",
-          title: "客流分析",
-        },
-        {
-          name: "gjERP",
-          title: "公交ERP",
-        },
-        {
-          name: "zdaqfy",
-          title: "主动安全防御",
-        },
-      ],
+      selfNav: [],
     };
   },
   computed: {
@@ -48,17 +37,17 @@ export default {
   },
   methods: {
     changeNav(item) {
-      this.navs = this.navs.map((n) => ({
+      this.selfNav = this.selfNav.map((n) => ({
         ...n,
         active: n.name === item.name,
       }));
+      this.$emit("changeNav", item);
     },
   },
   created() {
-    this.navs = this.navs.map((item, index) =>
+    this.selfNav = this.navs.map((item, index) =>
       Object.assign(item, { active: !index })
     );
-    console.log(this.navs);
   },
 };
 </script>
@@ -68,11 +57,13 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  flex: 1;
   margin-left: 0.24rem;
   > ol {
     padding: 0.28rem 0.2rem;
     font: 0.2rem/1 "微软雅黑";
-    color: white;
+    color: #c0c4cc;
+    cursor: pointer;
   }
 }
 </style>

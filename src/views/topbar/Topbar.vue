@@ -2,7 +2,8 @@
   <div class="top-bar">
     <Logo />
     <UseFor />
-    <MainNav />
+    <MainNav :navs="navs" @changeNav="changeNav" />
+    <ToolsBar />
   </div>
 </template>
 
@@ -10,12 +11,41 @@
 import Logo from "./MainLogo";
 import UseFor from "./usefor";
 import MainNav from "./MainNav";
+import ToolsBar from "./ToolsBar";
 export default {
   components: {
     Logo,
     UseFor,
-    MainNav
-  }
+    MainNav,
+    ToolsBar,
+  },
+  data() {
+    return {
+      navs: [
+        {
+          name: "zndd",
+          title: "智能调度",
+        },
+        {
+          name: "klfx",
+          title: "客流分析",
+        },
+        {
+          name: "gjERP",
+          title: "公交ERP",
+        },
+        {
+          name: "zdaqfy",
+          title: "主动安全防御",
+        },
+      ],
+    };
+  },
+  methods: {
+    changeNav(item) {
+      console.log("变换至这个", item.title);
+    },
+  },
 };
 </script>
 
