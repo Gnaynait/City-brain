@@ -1,6 +1,6 @@
 <template>
   <div class="tit-btn">
-    <span>{{ title }}</span>
+    <span v-if="mod">{{ title }}</span>
     <ol @click="ChangeHandler"></ol>
   </div>
 </template>
@@ -10,12 +10,12 @@ export default {
   props: {
     title: {
       type: String,
-      default: "标题"
+      default: "标题",
     },
     value: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   watch: {
     value(val) {
@@ -25,19 +25,19 @@ export default {
       handler(val) {
         this.$emit("input", val);
       },
-      immediate: true
-    }
+      immediate: true,
+    },
   },
   data() {
     return {
-      mod: this.value
+      mod: this.value,
     };
   },
   methods: {
     ChangeHandler() {
       this.mod = !this.mod;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -54,13 +54,23 @@ export default {
   justify-content: space-between;
   > span {
     margin-left: 0.4rem;
+    animation: in 0.2s linear 0.3s forwards;
+    opacity: 0;
   }
   > ol {
     width: 0.2rem;
     height: 0.2rem;
     background: url("~@/assets/images/icon_nag_pack up.png");
-    margin-right: 0.16rem;
+    margin: 0.16rem;
     cursor: pointer;
+  }
+}
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
