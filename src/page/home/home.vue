@@ -14,6 +14,9 @@ export default {
     TopBar,
     Main,
   },
+  created() {
+    console.log("SUN", this.$store.state.page.test);
+  },
 };
 </script>
 

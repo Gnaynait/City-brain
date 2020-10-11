@@ -5,7 +5,6 @@ import store from "./store";
 import "@/assets/style/index.less";
 import ElementUI from "element-ui";
 import "./styles.scss";
-
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 
