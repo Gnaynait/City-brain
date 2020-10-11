@@ -18,16 +18,16 @@ export default {
     img: {
       type: String,
       //   default: "https://www.baidu.com/img/flexible/logo/pc/result.png",
-      default: "",
+      default: ""
     },
     adminName: {
       type: String,
-      default: "admin",
+      default: "admin"
     },
     hasNew: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   computed: {},
   methods: {
@@ -40,11 +40,11 @@ export default {
         img.onload = () => {
           resolve(img);
         };
-        img.onerror = (e) => {
+        img.onerror = e => {
           reject(e);
         };
       });
-    },
+    }
   },
   async mounted() {
     try {
@@ -61,7 +61,7 @@ export default {
         this.$refs.admin.prepend(img);
       };
     }
-  },
+  }
 };
 </script>
 

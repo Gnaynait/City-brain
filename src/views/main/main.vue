@@ -1,15 +1,20 @@
 <template>
   <div class="main">
-    <Left />
+    <LeftMenu :currentList="currentMain" />
+    <!-- <div v-for="(item, index) in currentMain.children" :key="index">
+      {{ item.title }}2
+    </div> -->
   </div>
 </template>
 
 <script>
-import Left from "./left/LeftMenu";
+import LeftMenu from "./left/LeftMenu";
+import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
-    Left,
+    LeftMenu,
   },
+  mixins: [pageMixin],
 };
 </script>
 

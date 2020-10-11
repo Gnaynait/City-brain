@@ -5,7 +5,6 @@
     "path": "",
     "root": true,
     "children": [
-      [
         {
           "name": "",
           "path": "",
@@ -78,7 +77,6 @@
           "path": "",
           "title": "系统管理"
         }
-      ]
     ]
   },
   {
@@ -87,7 +85,6 @@
     "path": "",
     "root": true,
     "children": [
-      [
         {
           "name": "",
           "path": "",
@@ -160,7 +157,6 @@
           "path": "",
           "title": "系统管理"
         }
-      ]
     ]
   },
   {
@@ -169,7 +165,6 @@
     "path": "",
     "root": true,
     "children": [
-      [
         {
           "name": "",
           "path": "",
@@ -242,7 +237,6 @@
           "path": "",
           "title": "系统管理"
         }
-      ]
     ]
   },
   {
@@ -251,7 +245,6 @@
     "path": "",
     "root": true,
     "children": [
-      [
         {
           "name": "",
           "path": "",
@@ -324,7 +317,6 @@
           "path": "",
           "title": "系统管理"
         }
-      ]
     ]
   }
 ]

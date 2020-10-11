@@ -6,23 +6,23 @@
  * @Description: In User Settings Edit
  * @FilePath: \safe\src\api\manage.js
  */
-import resource from '@/utils/resource';
-import axios from '@/utils/request'
+import resource from "@/utils/resource";
+import axios from "@/utils/request";
 //post
 export function resourceAction(url) {
   return resource({
     url,
-    method: 'get'
+    method: "get"
   });
 }
 
 export function postAction(url, parameter) {
-  console.log('api url::', url)
+  console.log("api url::", url);
   return axios({
     url: url,
-    method: 'post',
-    data: parameter,
-  })
+    method: "post",
+    data: parameter
+  });
 }
 
 //post method= {post | put}
@@ -30,59 +30,59 @@ export function httpAction(url, parameter, method) {
   return axios({
     url: url,
     method: method,
-    data: parameter,
-  })
+    data: parameter
+  });
 }
 
 //put
 export function putAction(url, parameter) {
   return axios({
     url: url,
-    method: 'put',
-    data: parameter,
-  })
+    method: "put",
+    data: parameter
+  });
 }
 
 //get
 export function getAction(url, parameter) {
-  console.log('api url::', url)
+  console.log("api url::", url);
   return axios({
     url: url,
-    method: 'get',
-    params: parameter,
-  })
+    method: "get",
+    params: parameter
+  });
 }
 
 //get restful
 export function getActionRest(url, { id }) {
-  console.log('api url::', url)
-  console.log('api id::', id)
+  console.log("api url::", url);
+  console.log("api id::", id);
   return axios({
-    url: `${url}/${id || ''}`,
-    method: 'get',
-  })
+    url: `${url}/${id || ""}`,
+    method: "get"
+  });
 }
 
 //deleteAction
 export function deleteAction(url, parameter) {
   return axios({
-    url: url + '/' + parameter.id,
-    method: 'delete',
-  })
+    url: url + "/" + parameter.id,
+    method: "delete"
+  });
 }
 
 export function deleteActionNormal(url, params) {
   return axios({
     url: url,
-    method: 'delete',
-    params,
-  })
+    method: "delete",
+    params
+  });
 }
 
 export function deleteActionBody(url, params) {
   return axios({
     url: url,
-    method: 'delete',
-    data: params,
-  })
+    method: "delete",
+    data: params
+  });
 }

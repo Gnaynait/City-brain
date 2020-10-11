@@ -2,7 +2,7 @@
   <div class="top-bar">
     <Logo />
     <UseFor />
-    <MainNav :navs="navs" @changeNav="changeNav" />
+    <MainNav v-if="navs" :navs="navs" @changeNav="changeNav" />
     <ToolsBar />
   </div>
 </template>
@@ -17,35 +17,25 @@ export default {
     Logo,
     UseFor,
     MainNav,
-    ToolsBar,
+    ToolsBar
   },
   data() {
     return {
-      navs: [
-        {
-          name: "zndd",
-          title: "智能调度",
-        },
-        {
-          name: "klfx",
-          title: "客流分析",
-        },
-        {
-          name: "gjERP",
-          title: "公交ERP",
-        },
-        {
-          name: "zdaqfy",
-          title: "主动安全防御",
-        },
-      ],
+      // navs: [],
     };
+  },
+
+  computed: {
+    navs() {
+      return this.$store.state.page.allList;
+    }
   },
   methods: {
     changeNav(item) {
-      console.log("变换至这个", item.title);
-    },
-  },
+      const currentOrg = this.navs.find(n => n.name === item.name);
+      currentOrg && this.$store.commit("setMainCurrent", currentOrg);
+    }
+  }
 };
 </script>
 

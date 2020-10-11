@@ -14,7 +14,6 @@ const requestService = axios.create({
 // respone interceptor
 requestService.interceptors.response.use(
   response => {
-  
     if (response.status === 200) {
       return response.data;
     } else {

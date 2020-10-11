@@ -18,12 +18,13 @@ export default {
   props: {
     navs: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
+
   data() {
     return {
-      selfNav: [],
+      selfNav: []
     };
   },
   computed: {
@@ -33,22 +34,22 @@ export default {
           ? { color: "#ffffff", background: "#214094" }
           : { color: "#C0C4CC" };
       };
-    },
+    }
   },
   methods: {
     changeNav(item) {
-      this.selfNav = this.selfNav.map((n) => ({
+      this.selfNav = this.selfNav.map(n => ({
         ...n,
-        active: n.name === item.name,
+        active: n.name === item.name
       }));
       this.$emit("changeNav", item);
-    },
+    }
   },
   created() {
-    this.selfNav = this.navs.map((item, index) =>
+    this.selfNav = JSON.parse(JSON.stringify(this.navs)).map((item, index) =>
       Object.assign(item, { active: !index })
     );
-  },
+  }
 };
 </script>
 

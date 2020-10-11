@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" v-if="currentMain">
     <TopBar />
     <Main />
   </div>
@@ -8,15 +8,18 @@
 <script>
 import TopBar from "@/views/topbar/Topbar.vue";
 import Main from "@/views/main/main.vue";
+import pageMixin from "@/mixins/pageMixins";
 
 export default {
   components: {
     TopBar,
-    Main,
+    Main
   },
-  created() {
+  mixins: [pageMixin],
+  async created() {
     console.log("SUN", this.$store.state.page.test);
-  },
+    this.$store.dispatch("GET_MENU_LIST");
+  }
 };
 </script>
 
