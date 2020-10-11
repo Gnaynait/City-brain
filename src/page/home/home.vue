@@ -1,15 +1,15 @@
 <template>
   <div class="wrap">
-      <TopBar/>
+    <TopBar />
   </div>
 </template>
 
 <script>
-import TopBar from "@/views/topbar/Topbar.vue"
+import TopBar from "@/views/topbar/Topbar.vue";
 export default {
-    components: {
-        TopBar,
-    },
+  components: {
+    TopBar
+  }
 };
 </script>
 

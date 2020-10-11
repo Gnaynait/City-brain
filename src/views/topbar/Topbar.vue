@@ -2,17 +2,20 @@
   <div class="top-bar">
     <Logo />
     <UseFor />
+    <MainNav />
   </div>
 </template>
 
 <script>
 import Logo from "./MainLogo";
 import UseFor from "./usefor";
+import MainNav from "./MainNav";
 export default {
   components: {
     Logo,
     UseFor,
-  },
+    MainNav
+  }
 };
 </script>
 
