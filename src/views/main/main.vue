@@ -1,9 +1,16 @@
 <template>
-  <div class="main"></div>
+  <div class="main">
+    <Left />
+  </div>
 </template>
 
 <script>
-export default {};
+import Left from "./left/LeftMenu";
+export default {
+  components: {
+    Left,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -11,5 +18,8 @@ export default {};
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background: rebeccapurple;
 }
 </style>

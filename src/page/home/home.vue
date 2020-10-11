@@ -1,14 +1,18 @@
 <template>
   <div class="wrap">
     <TopBar />
+    <Main />
   </div>
 </template>
 
 <script>
 import TopBar from "@/views/topbar/Topbar.vue";
+import Main from "@/views/main/main.vue";
+
 export default {
   components: {
     TopBar,
+    Main,
   },
 };
 </script>

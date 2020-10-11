@@ -1,0 +1,330 @@
+[
+  {
+    "title": "智能调度",
+    "name": "智能调度",
+    "path": "",
+    "root": true,
+    "children": [
+      [
+        {
+          "name": "",
+          "path": "",
+          "title": "基础资源",
+          "children": [
+            {
+              "name": "",
+              "path": "",
+              "title": "组织架构"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线规划"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线管理"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "预案管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "营运计划"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能排班"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "包车管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能调度"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "实时监控"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "分析报表"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "设备管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "公交监测管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "系统管理"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "客流分析",
+    "name": "客流分析",
+    "path": "",
+    "root": true,
+    "children": [
+      [
+        {
+          "name": "",
+          "path": "",
+          "title": "基础资源",
+          "children": [
+            {
+              "name": "",
+              "path": "",
+              "title": "组织架构"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线规划"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线管理"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "预案管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "营运计划"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能排班"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "包车管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能调度"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "实时监控"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "分析报表"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "设备管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "公交监测管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "系统管理"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "公交ERP",
+    "name": "公交ERP",
+    "path": "",
+    "root": true,
+    "children": [
+      [
+        {
+          "name": "",
+          "path": "",
+          "title": "基础资源",
+          "children": [
+            {
+              "name": "",
+              "path": "",
+              "title": "组织架构"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线规划"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线管理"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "预案管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "营运计划"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能排班"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "包车管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能调度"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "实时监控"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "分析报表"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "设备管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "公交监测管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "系统管理"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "主动安全防御",
+    "name": "主动安全防御",
+    "path": "",
+    "root": true,
+    "children": [
+      [
+        {
+          "name": "",
+          "path": "",
+          "title": "基础资源",
+          "children": [
+            {
+              "name": "",
+              "path": "",
+              "title": "组织架构"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线规划"
+            },
+            {
+              "name": "",
+              "path": "",
+              "title": "路线管理"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "预案管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "营运计划"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能排班"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "包车管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "智能调度"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "实时监控"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "分析报表"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "设备管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "公交监测管理"
+        },
+        {
+          "name": "",
+          "path": "",
+          "title": "系统管理"
+        }
+      ]
+    ]
+  }
+]
