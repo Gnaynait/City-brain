@@ -1,5 +1,5 @@
 <!--
- * @Author: sallay
+ * @Author: sally
  * @Date: 2020-10-12 15:04:11
  * @LastEditTime: 2020-10-12 16:31:16
  * @LastEditors: Please set LastEditors
@@ -7,7 +7,7 @@
  * @FilePath: \City-brain\src\views\main\left\MenuItem.vue
 -->
 <template>
-  <div class="list">
+  <div class="list" :style="slideOn && 'overflow-y: auto'">
     <List :list="list" v-if="slideOn" />
     <SubList :list="list" v-else />
   </div>
@@ -19,18 +19,18 @@ import List from "./BigNode";
 export default {
   components: {
     List,
-    SubList,
+    SubList
   },
   props: {
     slideOn: {
       type: Boolean,
-      default: true,
+      default: true
     },
     list: {
       type: Array,
-      default: () => [],
-    },
-  },
+      default: () => []
+    }
+  }
 };
 </script>
 
@@ -38,6 +38,5 @@ export default {
 .list {
   height: 100%;
   position: relative;
-  overflow-y: auto;
 }
 </style>

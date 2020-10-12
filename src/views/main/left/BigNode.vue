@@ -1,5 +1,5 @@
 <!--
- * @Author: sallay
+ * @Author: sally
  * @Date: 2020-10-12 15:23:21
  * @LastEditTime: 2020-10-12 17:44:02
  * @LastEditors: Please set LastEditors
@@ -42,24 +42,24 @@ export default {
   props: {
     list: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     height: {
       type: Number,
-      default: 0,
-    },
+      default: 0
+    }
   },
   watch: {
     list: {
       handler() {
         this.init();
       },
-      deep: true,
-    },
+      deep: true
+    }
   },
   data() {
     return {
-      selfList: [],
+      selfList: []
     };
   },
   computed: {
@@ -69,10 +69,10 @@ export default {
       };
     },
     listStyle() {
-      return (height) => {
+      return height => {
         return { paddingLeft: `${(36 + height * 16) / 100}rem` };
       };
-    },
+    }
   },
   name: "List",
   methods: {
@@ -80,13 +80,13 @@ export default {
       item.children && (item.expand = !item.expand);
     },
     init() {
-      this.selfList = this.list.map((n) => ({ ...n, expand: false }));
-    },
+      this.selfList = this.list.map(n => ({ ...n, expand: false }));
+    }
   },
 
   created() {
     this.init();
-  },
+  }
 };
 </script>
 

@@ -1,5 +1,5 @@
 <!--
- * @Author: sallay
+ * @Author: sally
  * @Date: 2020-10-12 15:23:21
  * @LastEditTime: 2020-10-12 17:44:02
  * @LastEditors: Please set LastEditors
@@ -13,21 +13,24 @@
       class="block"
       :key="index"
       :style="blockStyle(item)"
+      @mouseover="itemOver(item)"
+      @mouseout="itemOut(item)"
     >
-      <div
-        class="block-item"
-        :style="listStyle(height)"
-        @click="itemClick(item)"
-      >
-        <div class="icon" :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`" v-if="height === 0"></div>
-        <span> {{ item.title }}{{ height }}</span>
-        <i v-if="item.children" :class="item.expand ? 'open' : 'close'"></i>
-      </div>
-      <transition name="slide-fade">
-        <div v-if="item.children && item.expand">
+      <div class="block-item">
+        <div
+          class="icon"
+          :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`"
+          v-if="height === 0"
+        ></div>
+        <span v-if="height !== 0"> {{ item.title }}</span>
+        <div
+          v-if="item.children && item.expand"
+          class="child-wrap"
+          :style="lineStyle"
+        >
           <List :list="item.children" :height="height + 1" />
         </div>
-      </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -60,19 +63,20 @@ export default {
   computed: {
     blockStyle() {
       return function(item) {
-        return { background: item.expand ? "#2c3950" : "none" };
+        return { background: item.expand ? "#2c3950" : "#262f3f" };
       };
     },
-    listStyle() {
-      return (height) => {
-        return { paddingLeft: `${(36 + height * 16) / 100}rem` };
-      };
+    lineStyle() {
+      return this.height ? { left: `${(this.height * 160 ) / 100}rem` } : { left: '0.52rem' }
     },
   },
   name: "List",
   methods: {
-    itemClick(item) {
-      item.children && (item.expand = !item.expand);
+    itemOver(item) {
+      item.children && (item.expand = true);
+    },
+    itemOut(item) {
+      item.children && (item.expand = false);
     },
     init() {
       this.selfList = this.list.map((n) => ({ ...n, expand: false }));
@@ -86,17 +90,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
-}
-.slide-fade-leave-active {
-  transition: all 0.3s ease;
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for below version 2.1.8 */ {
-  transform: translateY(-20px);
-  opacity: 0;
-}
 .list {
   font: 0.18rem "微软雅黑";
   color: #cdd4e0;
@@ -105,17 +98,16 @@ export default {
   transition: 2s;
   .block {
     transition: all 0.3s ease;
+    position: relative;
   }
   .block-item {
     height: 0.64rem;
     width: 100%;
-    // border-bottom: 1px black solid;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
-    justify-content: space-between;
-
     &:hover {
       background: #2c3950;
       color: #ffffff;
@@ -127,6 +119,7 @@ export default {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      padding-left: 0.24rem;
     }
     > i {
       width: 0.16rem;
@@ -145,8 +138,15 @@ export default {
     }
     .icon {
       font-size: 0.24rem;
-      margin-right: 0.16rem;
       font-weight: normal !important;
+      text-align: center;
+    }
+    .child-wrap {
+      position: absolute;
+      top: 0;
+      left: 0.52rem;
+      width: 1.6rem;
+      z-index: 999;
     }
   }
 }
