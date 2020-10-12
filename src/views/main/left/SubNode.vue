@@ -14,22 +14,26 @@
       :key="index"
       :style="blockStyle(item)"
       @mouseover="itemOver(item)"
-      @mouseout="itemOut(item)"
+      @mouseleave="itemOut(item)"
     >
       <div class="block-item">
         <div
           class="icon"
           :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`"
           v-if="height === 0"
+          :title="item.title"
         ></div>
         <span v-if="height !== 0"> {{ item.title }}</span>
-        <div
-          v-if="item.children && item.expand"
-          class="child-wrap"
-          :style="lineStyle"
-        >
-          <List :list="item.children" :height="height + 1" />
-        </div>
+        <i v-if="item.children && height !== 0" class="close"></i>
+        <transition name="slide-fade">
+          <div
+            v-if="item.children && item.expand"
+            class="child-wrap"
+            :style="lineStyle"
+          >
+            <List :list="item.children" :height="height + 1" />
+          </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -67,7 +71,9 @@ export default {
       };
     },
     lineStyle() {
-      return this.height ? { left: `${(this.height * 160 ) / 100}rem` } : { left: '0.52rem' }
+      return this.height
+        ? { left: `${(this.height * 160) / 100}rem` }
+        : { left: "0.52rem" };
     },
   },
   name: "List",
@@ -90,6 +96,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(-5px);
+  opacity: 0;
+}
 .list {
   font: 0.18rem "微软雅黑";
   color: #cdd4e0;
