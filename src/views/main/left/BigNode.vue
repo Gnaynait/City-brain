@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-12 15:23:21
- * @LastEditTime: 2020-10-12 17:40:46
+ * @LastEditTime: 2020-10-12 17:44:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\left\BigNode.vue
@@ -119,6 +119,7 @@ export default {
     &:hover {
       background: #2c3950;
       color: #ffffff;
+      font-weight: bold;
     }
     > span {
       flex: 1;

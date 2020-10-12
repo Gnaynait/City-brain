@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-12 15:04:11
- * @LastEditTime: 2020-10-12 16:29:31
- * @LastEditors: your name
+ * @LastEditTime: 2020-10-12 17:43:41
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\main.vue
 -->
@@ -33,7 +33,7 @@ export default {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  background: rebeccapurple;
+  background: #f2f3f7;
   overflow: hidden;
 }
 </style>
