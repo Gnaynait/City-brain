@@ -10,12 +10,12 @@ export default {
   props: {
     title: {
       type: String,
-      default: "标题",
+      default: "标题"
     },
     value: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   watch: {
     value(val) {
@@ -25,19 +25,19 @@ export default {
       handler(val) {
         this.$emit("input", val);
       },
-      immediate: true,
-    },
+      immediate: true
+    }
   },
   data() {
     return {
-      mod: this.value,
+      mod: this.value
     };
   },
   methods: {
     ChangeHandler() {
       this.mod = !this.mod;
-    },
-  },
+    }
+  }
 };
 </script>
 
