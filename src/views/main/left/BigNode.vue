@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-12 15:23:21
- * @LastEditTime: 2020-10-12 17:21:45
+ * @LastEditTime: 2020-10-12 17:40:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\left\BigNode.vue
@@ -19,14 +19,15 @@
         :style="listStyle(height)"
         @click="itemClick(item)"
       >
+        <div class="icon" v-if="height === 0"></div>
         <span> {{ item.title }}{{ height }}</span>
         <i v-if="item.children" :class="item.expand ? 'open' : 'close'"></i>
       </div>
-        <transition name="slide-fade">
-      <div v-if="item.children && item.expand">
-        <List :list="item.children" :height="height + 1" />
-      </div>
-        </transition>
+      <transition name="slide-fade">
+        <div v-if="item.children && item.expand">
+          <List :list="item.children" :height="height + 1" />
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -86,10 +87,10 @@ export default {
 
 <style lang="scss" scoped>
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active for below version 2.1.8 */ {
@@ -103,7 +104,7 @@ export default {
   flex-flow: column nowrap;
   transition: 2s;
   .block {
-    transition: 0.2s;
+    transition: all 0.3s ease;
   }
   .block-item {
     height: 0.64rem;
@@ -114,8 +115,17 @@ export default {
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
+
     &:hover {
       background: #2c3950;
+      color: #ffffff;
+    }
+    > span {
+      flex: 1;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     > i {
       width: 0.16rem;
@@ -131,6 +141,12 @@ export default {
     .close {
       background: url('~@/assets/images/icon_16_next.png');
       transform: rotate(-90deg);
+    }
+    .icon {
+      width: 0.32rem;
+      height: 0.32rem;
+      background: url('~@/assets/images/侧边栏_icon_basic_normal.png');
+      margin-right: 0.16rem;
     }
   }
 }

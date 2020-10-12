@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-12 15:04:11
+ * @LastEditTime: 2020-10-12 17:39:48
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \City-brain\src\views\main\left\TitleBtn.vue
+-->
 <template>
   <div class="tit-btn">
     <span v-if="mod">{{ title }}</span>
@@ -54,7 +62,7 @@ export default {
   justify-content: space-between;
   > span {
     margin-left: 0.4rem;
-    animation: in 0.2s linear 0.3s forwards;
+    animation: in 0.2s linear 0.2s forwards;
     opacity: 0;
   }
   > ol {

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-12 15:04:11
- * @LastEditTime: 2020-10-12 16:30:15
+ * @LastEditTime: 2020-10-12 17:38:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\left\LeftMenu.vue
@@ -9,7 +9,7 @@
 <template>
   <div class="left-menu" :style="leftWidth">
     <TitleBtn v-model="slideOn" :title="currentList.title" />
-    <MenuItem :list="currentList.children" />
+    <MenuItem :list="currentList.children"  v-if="slideOn"/>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     leftWidth() {
-      return { width: this.slideOn ? "2.24rem" : "0.52rem" };
+      return { width: this.slideOn ? "2.7rem" : "0.52rem" };
     }
   },
   watch: {
@@ -47,12 +47,12 @@ export default {
 
 <style lang="scss" scoped>
 .left-menu {
-  width: 2.24rem;
+  width: 2.7rem;
   height: 100%;
   background: #262f3f;
   display: flex;
   flex-flow: column nowrap;
-  transition: 0.5s;
+  transition: 0.2s;
   position: relative;
   overflow: hidden;
 }
