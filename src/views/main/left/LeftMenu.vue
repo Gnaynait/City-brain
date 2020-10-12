@@ -1,5 +1,5 @@
 <!--
- * @Author: your name
+ * @Author: sallay
  * @Date: 2020-10-12 15:04:11
  * @LastEditTime: 2020-10-12 17:38:53
  * @LastEditors: Please set LastEditors
@@ -9,7 +9,7 @@
 <template>
   <div class="left-menu" :style="leftWidth">
     <TitleBtn v-model="slideOn" :title="currentList.title" />
-    <MenuItem :list="currentList.children"  v-if="slideOn"/>
+    <MenuItem :list="currentList.children" :slideOn="slideOn" />
   </div>
 </template>
 

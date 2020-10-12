@@ -19,13 +19,8 @@
         :style="listStyle(height)"
         @click="itemClick(item)"
       >
-        <div
-          class="icon"
-          :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`"
-          v-if="height === 0"
-        ></div>
-        <div class="point" v-if="height !== 0 && !item.children"></div>
-        <span> {{ item.title }}</span>
+        <div class="icon" :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`" v-if="height === 0"></div>
+        <span> {{ item.title }}{{ height }}</span>
         <i v-if="item.children" :class="item.expand ? 'open' : 'close'"></i>
       </div>
       <transition name="slide-fade">
@@ -125,14 +120,6 @@ export default {
       background: #2c3950;
       color: #ffffff;
       font-weight: bold;
-    }
-
-    .point {
-      width: 0.04rem;
-      height: 0.04rem;
-      border-radius: 50%;
-      background: #cdd4e0;
-      margin-right: 0.14rem;
     }
     > span {
       flex: 1;

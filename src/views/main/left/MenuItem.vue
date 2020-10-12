@@ -1,5 +1,5 @@
 <!--
- * @Author: your name
+ * @Author: sallay
  * @Date: 2020-10-12 15:04:11
  * @LastEditTime: 2020-10-12 16:31:16
  * @LastEditors: Please set LastEditors
@@ -8,23 +8,30 @@
 -->
 <template>
   <div class="list">
-    <List :list="list" />
+    <List :list="list" v-if="slideOn" />
+    <SubList :list="list" v-else />
   </div>
 </template>
 
 <script>
-import List from './BigNode'
+import SubList from "./SubNode";
+import List from "./BigNode";
 export default {
   components: {
     List,
+    SubList,
   },
   props: {
+    slideOn: {
+      type: Boolean,
+      default: true,
+    },
     list: {
       type: Array,
       default: () => [],
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

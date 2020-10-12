@@ -1,5 +1,74 @@
 [
   {
+    "title": "模块",
+    "name": "mod",
+    "path": "",
+    "root": true,
+    "children": [
+      {
+        "name": "pageMod",
+        "path": "",
+        "title": "页面",
+        "icon": "icon--SelectNode",
+        "children": [
+          {
+            "name": "backend",
+            "path": "",
+            "title": "后台数据",
+            "children": [
+              {
+                "name": "home",
+                "path": "",
+                "title": "首页"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "componentsMod",
+        "path": "",
+        "title": "组件",
+        "icon": "icon--SampleNode",
+        "children": [
+          {
+            "name": "table",
+            "path": "",
+            "title": "简单表格"
+          },
+          {
+            "name": "multiForm",
+            "path": "",
+            "title": "多模块表单"
+          },
+          {
+            "name": "components",
+            "path": "",
+            "title": "简单组件"
+          }
+        ]
+      },
+      {
+        "name": "dialogMod",
+        "path": "",
+        "title": "对话框",
+        "icon": "icon--EvaluationNode",
+        "children": [
+          {
+            "name": "dialog",
+            "path": "",
+            "title": "对话框"
+          },
+          {
+            "name": "slideDialog",
+            "path": "",
+            "title": "侧滑对话框"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "智能调度",
     "name": "智能调度",
     "path": "",
@@ -31,33 +100,6 @@
                 "title": "路线管理"
               }
             ]
-          },
-          {
-            "name": "",
-            "path": "",
-            "title": "路线规划",
-            "children": [
-              {
-                "name": "",
-                "path": "",
-                "title": "组织架构"
-              },
-              {
-                "name": "",
-                "path": "",
-                "title": "路线规划"
-              },
-              {
-                "name": "",
-                "path": "",
-                "title": "路线管理"
-              }
-            ]
-          },
-          {
-            "name": "",
-            "path": "",
-            "title": "路线管理"
           }
         ]
       },

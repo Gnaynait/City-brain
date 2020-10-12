@@ -1,0 +1,1556 @@
+{
+  "id": "1037057",
+  "name": "s-font",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11713091",
+      "name": "ico_reload",
+      "font_class": "ico_reload",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "11545950",
+      "name": "ico_pause",
+      "font_class": "ico_pause",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "11526969",
+      "name": "FitDataGenerateNode",
+      "font_class": "-FitDataGenerateNode",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "11469048",
+      "name": "RandomDataGetNode",
+      "font_class": "-RandomDataGetNode",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "11238957",
+      "name": "ico_gou",
+      "font_class": "ico_gou",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "10240338",
+      "name": "ico_db_back",
+      "font_class": "ico_db_back",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "10240339",
+      "name": "ico_db_data",
+      "font_class": "ico_db_data",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "10240340",
+      "name": "ico_db_eye",
+      "font_class": "ico_db_eye",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "10240341",
+      "name": "ico_db_folder",
+      "font_class": "ico_db_folder",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "10240342",
+      "name": "ico_db_config",
+      "font_class": "ico_db_config",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "10240343",
+      "name": "ico_db_laycom_media",
+      "font_class": "ico_db_laycom_media",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "10240344",
+      "name": "ico_db_laycom_title",
+      "font_class": "ico_db_laycom_title",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "10240345",
+      "name": "ico_db_laytreef_close",
+      "font_class": "ico_db_laytreef_close",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "10240346",
+      "name": "ico_db_laycom_image",
+      "font_class": "ico_db_laycom_image",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "10240347",
+      "name": "ico_db_lock",
+      "font_class": "ico_db_lock",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "10240348",
+      "name": "ico_db_laycom_number",
+      "font_class": "ico_db_laycom_number",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "10240349",
+      "name": "ico_db_layup",
+      "font_class": "ico_db_layup",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "10240350",
+      "name": "ico_db_view",
+      "font_class": "ico_db_view",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "10240351",
+      "name": "ico_db_laydown",
+      "font_class": "ico_db_laydown",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "10240352",
+      "name": "ico_db_visiable",
+      "font_class": "ico_db_visiable",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "10240353",
+      "name": "ico_db_laybottom",
+      "font_class": "ico_db_laybottom",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "10240354",
+      "name": "ico_db_laytreef_open",
+      "font_class": "ico_db_laytreef_open",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "10240355",
+      "name": "ico_db_laycom_pie",
+      "font_class": "ico_db_laycom_doughnut",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "10240356",
+      "name": "ico_db_delete",
+      "font_class": "ico_db_delete",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "10240357",
+      "name": "ico_db_save",
+      "font_class": "ico_db_save",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "10240358",
+      "name": "ico_db_public",
+      "font_class": "ico_db_public",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "10240359",
+      "name": "ico_db_laytop",
+      "font_class": "ico_db_laytop",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "10240446",
+      "name": "ico_db_arrow",
+      "font_class": "ico_db_arrow",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "10257961",
+      "name": "ico_db_maintit",
+      "font_class": "ico_db_maintit",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "10283429",
+      "name": "ico_db_laycom_normal",
+      "font_class": "ico_db_laycom_normal",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "10318451",
+      "name": "ico_db_reduce",
+      "font_class": "ico_db_reduce",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "10318452",
+      "name": "ico_db_plus",
+      "font_class": "ico_db_plus",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "10377950",
+      "name": "ico_db_laycom_bar",
+      "font_class": "ico_db_laycom_bar",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "10377952",
+      "name": "ico_db_laycom_funnel",
+      "font_class": "ico_db_laycom_funnel",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "10377953",
+      "name": "ico_db_laycom_linebar",
+      "font_class": "ico_db_laycom_linebar",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "10377954",
+      "name": "ico_db_laycom_line",
+      "font_class": "ico_db_laycom_line",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "10377955",
+      "name": "ico_db_laycom_horizontalbar",
+      "font_class": "ico_db_laycom_horizontalbar",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "10377956",
+      "name": "ico_db_laycom_line2y",
+      "font_class": "ico_db_laycom_line2y",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "10377957",
+      "name": "ico_db_laycom_scatter",
+      "font_class": "ico_db_laycom_scatter",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "10377958",
+      "name": "ico_db_laycom_pie",
+      "font_class": "ico_db_laycom_pie",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "10377959",
+      "name": "ico_db_laycom_radar",
+      "font_class": "ico_db_laycom_radar",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "10377960",
+      "name": "ico_db_laycom_polar",
+      "font_class": "ico_db_laycom_polar",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "10562777",
+      "name": "ico_al_bottom",
+      "font_class": "ico_al_bottom",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "10562778",
+      "name": "ico_al_Hcenter",
+      "font_class": "ico_al_Hcenter",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    },
+    {
+      "icon_id": "10562779",
+      "name": "ico_al_Hline",
+      "font_class": "ico_al_Hline",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    },
+    {
+      "icon_id": "10562780",
+      "name": "ico_al_top",
+      "font_class": "ico_al_top",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "10562781",
+      "name": "ico_al_right",
+      "font_class": "ico_al_right",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "10562782",
+      "name": "ico_al_HorizontalAverage",
+      "font_class": "ico_al_HorizontalAverage",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "10562783",
+      "name": "ico_al_left",
+      "font_class": "ico_al_left",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "10562784",
+      "name": "ico_al_Vcenter",
+      "font_class": "ico_al_Vcenter",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "10562785",
+      "name": "ico_al_VerticalAverage",
+      "font_class": "ico_al_VerticalAverage",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "10562786",
+      "name": "ico_al_Vline",
+      "font_class": "ico_al_Vline",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "10971855",
+      "name": "DistinctNode",
+      "font_class": "-DistinctNode",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "10785346",
+      "name": "LabelEncodingNode",
+      "font_class": "-LabelEncodingNode",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "10585581",
+      "name": "PySparkNode",
+      "font_class": "-PySparkNode",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "10584925",
+      "name": "TargetEncodingNode",
+      "font_class": "-TargetEncodingNode",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "10584822",
+      "name": "OneHotEncodingNode",
+      "font_class": "-OneHotEncodingNode",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "10545821",
+      "name": "BuildIFNode",
+      "font_class": "-BuildIFNode",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "10474848",
+      "name": "BinarizerNode",
+      "font_class": "-BinarizerNode",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "10474604",
+      "name": "PolynomialExpressionNode",
+      "font_class": "-PolynomialExpressionNode",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "10449391",
+      "name": "BucketizerNode",
+      "font_class": "-BucketizerNode",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "10399205",
+      "name": "targetencoding",
+      "font_class": "-targetencoding",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "10398995",
+      "name": "空间",
+      "font_class": "kongjian",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "10384865",
+      "name": "DataViewOutputNode",
+      "font_class": "-DataViewOutputNode",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "10384789",
+      "name": "DataViewSourceNode",
+      "font_class": "-DataViewSourceNode",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "10377525",
+      "name": "RepartitionNode",
+      "font_class": "-RepartitionNode",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "10377518",
+      "name": "KGSourceNode",
+      "font_class": "-KGSourceNode",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "10253680",
+      "name": "BuildPCANode",
+      "font_class": "-BuildPCANode",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "10226665",
+      "name": "-FaceBatchClusterNode",
+      "font_class": "-FaceBatchClusterNode",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "10226657",
+      "name": "-StreamingExecutionNode",
+      "font_class": "-StreamingExecutionNode",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "10222567",
+      "name": "ParallelgramNode",
+      "font_class": "-ParallelgramNode",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "10211911",
+      "name": "ChiSquareNode",
+      "font_class": "-ChiSquareNode",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "10209199",
+      "name": "StackBarNode",
+      "font_class": "-StackBarNode",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "10207872",
+      "name": "Bubble3DNode",
+      "font_class": "-Bubble3DNode",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "10206139",
+      "name": "Scattergram3DNode",
+      "font_class": "-Scattergram3DNode",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "10206096",
+      "name": "SurfaceNode",
+      "font_class": "-SurfaceNode",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "10204851",
+      "name": "GraphQueryNode",
+      "font_class": "-GraphQueryNode",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "10182197",
+      "name": "BuildMLPRegressionNode",
+      "font_class": "-BuildMLPRegressionNode",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "10182160",
+      "name": "BuildMLPClassifierNode",
+      "font_class": "-BuildMLPClassifierNode",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "10179341",
+      "name": "LSTMTimeSeriesNode",
+      "font_class": "-LSTMTimeSeriesNode",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "10137000",
+      "name": "StandardScalerNode",
+      "font_class": "-StandardScalerNode",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "10136577",
+      "name": "RescaleNode1",
+      "font_class": "-RescaleNode",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "10102296",
+      "name": "BoxplotNode",
+      "font_class": "-BoxplotNode",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "10102027",
+      "name": "RadarNode",
+      "font_class": "-RadarNode",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "10102017",
+      "name": "BubbleNode",
+      "font_class": "-BubbleNode",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "10093752",
+      "name": "BuildXGBoostClassifier",
+      "font_class": "-BuildXGBoostClassifier",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "10093749",
+      "name": "BuildXGBoostRegression",
+      "font_class": "-BuildXGBoostRegression",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "10071490",
+      "name": "BuildCanopyKMeansNode",
+      "font_class": "-BuildCanopyKMeansNode",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "10071489",
+      "name": "BuildCanopyClusterNode",
+      "font_class": "-BuildCanopyClusterNode",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "10071486",
+      "name": "QuantileDiscretizerNode",
+      "font_class": "-QuantileDiscretizerNode",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "10069949",
+      "name": "SpearmanCorrelationNode",
+      "font_class": "-SpearmanCorrelationNode",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "10069948",
+      "name": "PearsonCorrelationNode",
+      "font_class": "-PearsonCorrelationNode",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "9926706",
+      "name": "BuildFCMeansNode",
+      "font_class": "-BuildFCMeansNode",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "9916919",
+      "name": "BuildFMRegressionNode",
+      "font_class": "-BuildFMRegressionNode",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "9916907",
+      "name": "BuildFMClassifierNode",
+      "font_class": "-BuildFMClassifierNode",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "9882384",
+      "name": "KGOutputNode",
+      "font_class": "-KGOutputNode",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "9817333",
+      "name": "SqlNode",
+      "font_class": "-SqlNode",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "9788730",
+      "name": "-TimeSeriesResampleNode",
+      "font_class": "-TimeSeriesResampleNode",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "9788763",
+      "name": "-TimeSeriesCleaningNode",
+      "font_class": "-TimeSeriesCleaningNode",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "9787269",
+      "name": "ico-folder-back",
+      "font_class": "ico-folder-back",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "9713358",
+      "name": "-ExcelSourceNode",
+      "font_class": "-ExcelSourceNode",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "9487444",
+      "name": "fillNode",
+      "font_class": "-FillNode",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "9487458",
+      "name": "GenerateColumnNode",
+      "font_class": "-GenerateColumnNode",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "9186581",
+      "name": "Array2Dataset",
+      "font_class": "-Array2DatasetNode",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "8988090",
+      "name": "CplexNode",
+      "font_class": "-CplexNode",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "8944195",
+      "name": "UnionNode",
+      "font_class": "-UnionNode",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "8944196",
+      "name": "FormatNode",
+      "font_class": "-FormatNode",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "8407178",
+      "name": "tree-arr-right",
+      "font_class": "tree-arr-right",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "8407179",
+      "name": "tree-arr-down",
+      "font_class": "tree-arr-down",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "8286100",
+      "name": "GEOGeometryCalculateNode",
+      "font_class": "-GEOGeometryCalculateNode",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "8286101",
+      "name": "GEOMultipartToSinglepartNode",
+      "font_class": "-GEOMultipartToSinglepartNode",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "8263537",
+      "name": "ConditionNode",
+      "font_class": "-ConditionNode",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "8242964",
+      "name": "GEOCollectClipNode",
+      "font_class": "-GEOClipNode",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "8242965",
+      "name": "-GEOBufferNode",
+      "font_class": "-GEOBufferNode",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "8242966",
+      "name": "GEOJoinNode",
+      "font_class": "-GEOJoinNode",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "8242967",
+      "name": "GEOIdentityNode",
+      "font_class": "-GEOIdentityNode",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "8242968",
+      "name": "GEOUnionNode",
+      "font_class": "-GEOUnionNode",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "8201842",
+      "name": "-GEORuleMappingNode",
+      "font_class": "-GEORuleMappingNode",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "8193132",
+      "name": "-DescribeNode",
+      "font_class": "-DescribeNode",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "8193133",
+      "name": "-GEOSourceNode",
+      "font_class": "-GEOSourceNode",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "8193134",
+      "name": "-GEOOutputNode",
+      "font_class": "-GEOOutputNode",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "8179158",
+      "name": "Reid",
+      "font_class": "-Reid",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "8179159",
+      "name": "VehicleRecognition",
+      "font_class": "-VehicleRecognition",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "8179160",
+      "name": "NeuralNetwork",
+      "font_class": "-NeuralNetwork",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "8082022",
+      "name": "DeleteRenameNode",
+      "font_class": "-DeleteRenameNode",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "8082023",
+      "name": "TimeSeriesNode",
+      "font_class": "-TimeSeriesNode",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "8082024",
+      "name": "OutlierAndMissingValProNode",
+      "font_class": "-OutlierAndMissingValProNode",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "107549",
+      "name": "勾",
+      "font_class": "gou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "543043",
+      "name": "叉2",
+      "font_class": "cha2",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "7636459",
+      "name": "-MapNode",
+      "font_class": "-MapNode",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "7632634",
+      "name": "-HiveWriterNode",
+      "font_class": "-HiveWriterNode",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "7632635",
+      "name": "-LineNode",
+      "font_class": "-LineNode",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7632636",
+      "name": "-JDBCOutputNode",
+      "font_class": "-JDBCOutputNode",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "7632637",
+      "name": "-MergeNode",
+      "font_class": "-MergeNode",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "7632638",
+      "name": "-ScattergramNode",
+      "font_class": "-ScattergramNode",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7632639",
+      "name": "-SortNode",
+      "font_class": "-SortNode",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "7632640",
+      "name": "-TableOutputNode",
+      "font_class": "-TableOutputNode",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "7632641",
+      "name": "-SampleNode",
+      "font_class": "-SampleNode",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "7632642",
+      "name": "-PartitionNode",
+      "font_class": "-PartitionNode",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7632643",
+      "name": "-StreamingSourceNode",
+      "font_class": "-StreamingSourceNode",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "7632644",
+      "name": "-JDBCSourceNode",
+      "font_class": "-JDBCSourceNode",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "7632645",
+      "name": "-BuildAFTSRNode",
+      "font_class": "-BuildAFTSRNode",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "7632646",
+      "name": "-TypeNode",
+      "font_class": "-TypeNode",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "7632647",
+      "name": "-BarNode",
+      "font_class": "-BarNode",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "7632648",
+      "name": "-PieNode",
+      "font_class": "-PieNode",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "7632649",
+      "name": "-BuildGLRNode",
+      "font_class": "-BuildGLRNode",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "7632650",
+      "name": "-HiveSourceNode",
+      "font_class": "-HiveSourceNode",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "7632651",
+      "name": "-BuildDTCNode",
+      "font_class": "-BuildDTCNode",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "7632652",
+      "name": "-AggregateNode",
+      "font_class": "-AggregateNode",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "7632653",
+      "name": "-SelectNode",
+      "font_class": "-SelectNode",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "7632654",
+      "name": "-BuildGMNode",
+      "font_class": "-BuildGMNode",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "7632655",
+      "name": "-BuildDTRNode",
+      "font_class": "-BuildDTRNode",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7632656",
+      "name": "-BuildGBTCNode",
+      "font_class": "-BuildGBTCNode",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "7632658",
+      "name": "-BuildOVRCNode",
+      "font_class": "-BuildOVRCNode",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "7632659",
+      "name": "-BuildBKMeansNode",
+      "font_class": "-BuildBKMeansNode",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "7632660",
+      "name": "-BuildRFCNode",
+      "font_class": "-BuildRFCNode",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "7632661",
+      "name": "-BuildRFRNode",
+      "font_class": "-BuildRFRNode",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "7632662",
+      "name": "-BuildNBNode",
+      "font_class": "-BuildNBNode",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "7632663",
+      "name": "-BuildKMeansNode",
+      "font_class": "-BuildKMeansNode",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "7632664",
+      "name": "-BuildLRNode",
+      "font_class": "-BuildLRNode",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "7632666",
+      "name": "-BuildIRNode",
+      "font_class": "-BuildIRNode",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "7632667",
+      "name": "-FileWriterNode",
+      "font_class": "-FileWriterNode",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "7632668",
+      "name": "-BuildMLPNode",
+      "font_class": "-BuildMLPNode",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "7632669",
+      "name": "-BuildSVM",
+      "font_class": "-BuildSVM",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7632670",
+      "name": "-BuildLDANode",
+      "font_class": "-BuildLDANode",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "7632671",
+      "name": "-BuildLGRNode",
+      "font_class": "-BuildLGRNode",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "7632672",
+      "name": "-EvaluationNode",
+      "font_class": "-EvaluationNode",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "7632673",
+      "name": "-ESSourceNode",
+      "font_class": "-ESSourceNode",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "7632674",
+      "name": "-ESOutputNode",
+      "font_class": "-ESOutputNode",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "7632675",
+      "name": "-FilterNode",
+      "font_class": "-FilterNode",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "7632676",
+      "name": "-BuildGBTRNode",
+      "font_class": "-BuildGBTRNode",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "7632677",
+      "name": "-BuildALSNode",
+      "font_class": "-BuildALSNode",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "7632678",
+      "name": "-FileSourceNode",
+      "font_class": "-FileSourceNode",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "7632679",
+      "name": "-BuildFPGrowthNode",
+      "font_class": "-BuildFPGrowthNode",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "7632681",
+      "name": "btnlb",
+      "font_class": "btnlb",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "7632682",
+      "name": "btnplus",
+      "font_class": "btnplus",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "7632683",
+      "name": "ico-btnclose",
+      "font_class": "ico-btnclose",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "7632684",
+      "name": "top_zoomout",
+      "font_class": "top_zoomout1",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "7632685",
+      "name": "btnfold",
+      "font_class": "btnfold",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "7632686",
+      "name": "ico-card",
+      "font_class": "ico-card",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "7632687",
+      "name": "ico-export",
+      "font_class": "ico-export",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "7632688",
+      "name": "ico-file",
+      "font_class": "ico-file",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "7632689",
+      "name": "ico-folder",
+      "font_class": "ico-folder",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "7632690",
+      "name": "ico-run",
+      "font_class": "ico-run",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "7632691",
+      "name": "ico-detach",
+      "font_class": "ico-detach",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "7632692",
+      "name": "ico-moveto",
+      "font_class": "ico-moveto",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "7632693",
+      "name": "ico-list",
+      "font_class": "ico-list",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "7632694",
+      "name": "ico-rename",
+      "font_class": "ico-rename",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "7632695",
+      "name": "ico-search",
+      "font_class": "ico-search",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "7632696",
+      "name": "ico-subfile",
+      "font_class": "ico-subfile",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "7632697",
+      "name": "top_confirm",
+      "font_class": "top_confirm1",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "7632698",
+      "name": "ico-set",
+      "font_class": "ico-set",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "7632699",
+      "name": "ico-sort",
+      "font_class": "ico-sort",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "7632700",
+      "name": "operator",
+      "font_class": "operator",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "7632701",
+      "name": "ico-edit",
+      "font_class": "ico-edit",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "7632702",
+      "name": "top_del",
+      "font_class": "top_del1",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "7632703",
+      "name": "top_input",
+      "font_class": "top_input1",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "7632704",
+      "name": "top_run",
+      "font_class": "top_run1",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "7632705",
+      "name": "top_list",
+      "font_class": "top_list1",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "7632706",
+      "name": "top_output",
+      "font_class": "top_output1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "7632707",
+      "name": "top_zoomin",
+      "font_class": "top_zoomin1",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "7632714",
+      "name": "ico-subfolder",
+      "font_class": "ico-subfolder",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "7631275",
+      "name": "btnclose",
+      "font_class": "btnclose",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7631276",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7631277",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7631278",
+      "name": "folder",
+      "font_class": "folder",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7631279",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7631280",
+      "name": "run",
+      "font_class": "run",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "7631281",
+      "name": "sort",
+      "font_class": "sort",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7631282",
+      "name": "list",
+      "font_class": "list",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7631283",
+      "name": "subfile",
+      "font_class": "subfile",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "7631285",
+      "name": "top_confirm",
+      "font_class": "top_confirm",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7631286",
+      "name": "top_list",
+      "font_class": "top_list",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "7631287",
+      "name": "set",
+      "font_class": "set",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "7631288",
+      "name": "top_input",
+      "font_class": "top_input",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7631289",
+      "name": "top_output",
+      "font_class": "top_output",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "7631290",
+      "name": "top_run",
+      "font_class": "top_run",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7631291",
+      "name": "top_zoomout",
+      "font_class": "top_zoomout",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "7631292",
+      "name": "top_zoomin",
+      "font_class": "top_zoomin",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7631293",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "7631294",
+      "name": "top_del",
+      "font_class": "top_del",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <!--
- * @Author: your name
+ * @Author: sallay
  * @Date: 2020-10-12 15:04:11
  * @LastEditTime: 2020-10-12 17:43:41
  * @LastEditors: Please set LastEditors
@@ -9,9 +9,6 @@
 <template>
   <div class="main">
     <LeftMenu :currentList="currentMain" />
-    <!-- <div v-for="(item, index) in currentMain.children" :key="index">
-      {{ item.title }}2
-    </div> -->
   </div>
 </template>
 
