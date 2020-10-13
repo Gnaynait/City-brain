@@ -1,9 +1,28 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-12 15:04:11
+ * @LastEditTime: 2020-10-13 18:02:39
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \City-brain\src\App.vue
+-->
 <template>
   <div id="app">
     <router-view />
   </div>
 </template>
 
+<script>
+  export default {
+    mounted () {
+      window.onresize=()=>this.$bus.$emit("RESIZE")
+    },
+  }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
 <style lang="less">
 #app {
   width: 100%;
