@@ -28,56 +28,56 @@
 </template>
 
 <script>
-import pageMixins from '@/mixins/pageMixins'
+import pageMixins from "@/mixins/pageMixins";
 export default {
   mixins: [pageMixins],
   data() {
     return {
-      showCotrl: false,
-    }
+      showCotrl: false
+    };
   },
   computed: {
     blockClass() {
       return function(item) {
-        const cArr = []
-        item.home && cArr.push('home')
-        item.name === this.currentView.name && cArr.push('choice')
-        return cArr
-      }
-    },
+        const cArr = [];
+        item.home && cArr.push("home");
+        item.name === this.currentView.name && cArr.push("choice");
+        return cArr;
+      };
+    }
   },
   mounted() {
-    this.overWidth()
+    this.overWidth();
 
-    this.$bus.$on('RESIZE', () => {
-      this.overWidth()
-    })
+    this.$bus.$on("RESIZE", () => {
+      this.overWidth();
+    });
   },
   methods: {
     removeTab(item) {
-      this.$store.commit('removeView', item)
+      this.$store.commit("removeView", item);
     },
     changeTab(item) {
-      this.$store.commit('changeCurrentView', item)
+      this.$store.commit("changeCurrentView", item);
     },
     overWidth() {
       this.$nextTick(() => {
-        const wrapEl = this.$refs.listWrap.$el
-        const childrenEl = wrapEl.children
+        const wrapEl = this.$refs.listWrap.$el;
+        const childrenEl = wrapEl.children;
         const childTolW = Array.from(childrenEl).reduce(
-          (tol, el) =>tol+ el.offsetWidth,
+          (tol, el) => tol + el.offsetWidth,
           0
-        )
+        );
 
         if (childTolW >= wrapEl.offsetWidth) {
-            console.log('超出');
-          this.showCotrl = true
+          console.log("超出");
+          this.showCotrl = true;
         }
-        console.log(childTolW, wrapEl.offsetWidth)
-      })
-    },
-  },
-}
+        console.log(childTolW, wrapEl.offsetWidth);
+      });
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -101,7 +101,7 @@ export default {
   padding: 0 0.16rem;
   position: relative;
   overflow-x: auto;
-  font: 0.16rem/1 '微软雅黑';
+  font: 0.16rem/1 "微软雅黑";
   color: #a5afb8;
   .inner {
     width: 100%;
@@ -134,7 +134,7 @@ export default {
       }
     }
     .home {
-      background: url('~@/assets/images/icon_tab_home_choose.png') no-repeat
+      background: url("~@/assets/images/icon_tab_home_choose.png") no-repeat
         0.08rem center;
       text-indent: 0.28rem;
       background-size: 0.24rem 0.24rem !important ;

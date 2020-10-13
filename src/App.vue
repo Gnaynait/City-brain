@@ -8,21 +8,20 @@
 -->
 <template>
   <div id="app">
+    <component :is="Cmp" />
     <router-view />
   </div>
 </template>
 
 <script>
-  export default {
-    mounted () {
-      window.onresize=()=>this.$bus.$emit("RESIZE")
-    },
+export default {
+  mounted() {
+    window.onresize = () => this.$bus.$emit("RESIZE");
   }
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
 <style lang="less">
 #app {
   width: 100%;

@@ -9,14 +9,17 @@
 <template>
   <div class="board">
     <NavList />
+    <Main />
   </div>
 </template>
 
 <script>
+import Main from "./main";
 import NavList from "./navList";
 export default {
   components: {
-    NavList
+    NavList,
+    Main
   }
 };
 </script>
@@ -25,5 +28,7 @@ export default {
 .board {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 </style>

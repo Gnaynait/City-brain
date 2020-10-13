@@ -18,9 +18,9 @@
             "children": [
               {
                 "name": "home",
-                "path": "",
+                "path": "views/mod/test",
                 "title": "首页",
-                "home":true
+                "home": true
               }
             ]
           }
@@ -34,7 +34,7 @@
         "children": [
           {
             "name": "table",
-            "path": "",
+            "path": "views/topbar/MainLogo",
             "title": "简单表格"
           },
           {
