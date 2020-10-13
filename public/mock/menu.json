@@ -19,7 +19,8 @@
               {
                 "name": "home",
                 "path": "",
-                "title": "首页"
+                "title": "首页",
+                "home":true
               }
             ]
           }

@@ -1,7 +1,7 @@
 <!--
  * @Author: sally
  * @Date: 2020-10-12 15:23:21
- * @LastEditTime: 2020-10-12 17:44:02
+ * @LastEditTime: 2020-10-13 17:09:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\left\BigNode.vue
@@ -24,7 +24,11 @@
           :class="`iconfont ${item.icon || 'icon--FaceBatchClusterNode'}`"
           v-if="height === 0"
         ></div>
-        <div class="point" v-if="height !== 0 && !item.children"></div>
+        <div
+          class="point"
+          v-if="height !== 0 && !item.children"
+          :style="pointStyle(item)"
+        ></div>
         <span> {{ item.title }}</span>
         <i v-if="item.children" :class="item.expand ? 'open' : 'close'"></i>
       </div>
@@ -38,7 +42,10 @@
 </template>
 
 <script>
+import pageMixin from "@/mixins/pageMixins";
 export default {
+  inject: ["addTab", "changeChoice"],
+  mixins: [pageMixin],
   props: {
     list: {
       type: Array,
@@ -72,12 +79,21 @@ export default {
       return height => {
         return { paddingLeft: `${(36 + height * 16) / 100}rem` };
       };
+    },
+    pointStyle() {
+      return item => {
+        return {
+          background:
+            item.name === this.currentView.name ? "#0040ff" : "#cdd4e0"
+        };
+      };
     }
   },
   name: "List",
   methods: {
     itemClick(item) {
       item.children && (item.expand = !item.expand);
+      this.addTab(item);
     },
     init() {
       this.selfList = this.list.map(n => ({ ...n, expand: false }));
@@ -107,7 +123,8 @@ export default {
   color: #cdd4e0;
   display: flex;
   flex-flow: column nowrap;
-  transition: 2s;
+  transition: 0.2s;
+  overflow-y: auto;
   .block {
     transition: all 0.3s ease;
   }

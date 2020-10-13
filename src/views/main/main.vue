@@ -1,7 +1,7 @@
 <!--
  * @Author: sally
  * @Date: 2020-10-12 15:04:11
- * @LastEditTime: 2020-10-12 17:43:41
+ * @LastEditTime: 2020-10-13 14:07:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\main.vue
@@ -9,15 +9,18 @@
 <template>
   <div class="main">
     <LeftMenu :currentList="currentMain" />
+    <Board />
   </div>
 </template>
 
 <script>
+import Board from "./board/board";
 import LeftMenu from "./left/LeftMenu";
 import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
-    LeftMenu
+    LeftMenu,
+    Board
   },
   mixins: [pageMixin]
 };

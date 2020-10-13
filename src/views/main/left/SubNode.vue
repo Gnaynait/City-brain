@@ -1,7 +1,7 @@
 <!--
  * @Author: sally
  * @Date: 2020-10-12 15:23:21
- * @LastEditTime: 2020-10-12 17:44:02
+ * @LastEditTime: 2020-10-13 16:44:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\views\main\left\BigNode.vue
@@ -15,6 +15,7 @@
       :style="blockStyle(item)"
       @mouseover="itemOver(item)"
       @mouseleave="itemOut(item)"
+      @click="itemClick(item)"
     >
       <div class="block-item">
         <div
@@ -41,27 +42,28 @@
 
 <script>
 export default {
+  inject: ["addTab", "changeChoice"],
   props: {
     list: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     height: {
       type: Number,
-      default: 0,
-    },
+      default: 0
+    }
   },
   watch: {
     list: {
       handler() {
         this.init();
       },
-      deep: true,
-    },
+      deep: true
+    }
   },
   data() {
     return {
-      selfList: [],
+      selfList: []
     };
   },
   computed: {
@@ -74,10 +76,14 @@ export default {
       return this.height
         ? { left: `${(this.height * 160) / 100}rem` }
         : { left: "0.52rem" };
-    },
+    }
   },
   name: "List",
   methods: {
+    itemClick(item) {
+      item.children && (item.expand = !item.expand);
+      this.addTab(item);
+    },
     itemOver(item) {
       item.children && (item.expand = true);
     },
@@ -85,13 +91,13 @@ export default {
       item.children && (item.expand = false);
     },
     init() {
-      this.selfList = this.list.map((n) => ({ ...n, expand: false }));
-    },
+      this.selfList = this.list.map(n => ({ ...n, expand: false }));
+    }
   },
 
   created() {
     this.init();
-  },
+  }
 };
 </script>
 
