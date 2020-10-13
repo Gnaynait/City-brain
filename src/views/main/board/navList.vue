@@ -12,7 +12,7 @@
       <ol
         :class="blockClass(item)"
         v-for="(item, index) in tabArr"
-        :key="index"
+        :key="item.title"
         @click="changeTab(item)"
       >
         <span>{{ item.title }}</span>

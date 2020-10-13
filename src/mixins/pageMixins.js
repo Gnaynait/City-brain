@@ -8,7 +8,7 @@
  */
 export default {
   computed: {
-    navs() {
+    NAVS() {
       return this.$store.state.page.allList;
     },
     currentMain() {

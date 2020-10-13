@@ -1,6 +1,6 @@
 <template>
-  <Container :styleObj='{width:"300px"}'>
-   456zenme 
+  <Container>
+    456zenme
   </Container>
 </template>
 
@@ -8,8 +8,8 @@
 import Container from "@/layout/container";
 export default {
   components: {
-    Container,
-  },
+    Container
+  }
 };
 </script>
 

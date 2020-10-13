@@ -20,9 +20,9 @@ import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
     LeftMenu,
-    Board,
+    Board
   },
-  mixins: [pageMixin],
+  mixins: [pageMixin]
 };
 </script>
 

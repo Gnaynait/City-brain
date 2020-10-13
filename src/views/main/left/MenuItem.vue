@@ -22,22 +22,22 @@ export default {
   provide() {
     return {
       addTab: this.addTab,
-      changeChoice: this.changeChoice,
+      changeChoice: this.changeChoice
     };
   },
   components: {
     List,
-    SubList,
+    SubList
   },
   props: {
     slideOn: {
       type: Boolean,
-      default: true,
+      default: true
     },
     list: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
   methods: {
     addTab(item) {
@@ -47,8 +47,8 @@ export default {
     changeChoice(item) {
       if (this.currentView.name === item.name) return;
       this.$store.commit("changeCurrentView", item);
-    },
-  },
+    }
+  }
 };
 </script>
 

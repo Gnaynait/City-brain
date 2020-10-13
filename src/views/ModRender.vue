@@ -1,7 +1,13 @@
 <template>
   <div class="render">
     <StringCmp :cmp="node.path" v-if="frontMod" />
-    <iframe v-else :src="node.path" width="100%" height="100%" frameborder='0'></iframe>
+    <iframe
+      v-else
+      :src="node.path"
+      width="100%"
+      height="100%"
+      frameborder="0"
+    ></iframe>
   </div>
 </template>
 
@@ -11,17 +17,17 @@ export default {
   props: {
     node: {
       type: Object,
-      default: () => {},
-    },
+      default: () => {}
+    }
   },
   components: {
-    StringCmp,
+    StringCmp
   },
   computed: {
     frontMod() {
       return !this.node.type || this.node.type === "mod";
-    },
-  },
+    }
+  }
 };
 </script>
 

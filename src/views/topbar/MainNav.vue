@@ -14,7 +14,9 @@
 </template>
 
 <script>
+import pageMixins from "@/mixins/pageMixins";
 export default {
+  mixins: [pageMixins],
   props: {
     navs: {
       type: Array,
@@ -46,8 +48,8 @@ export default {
     }
   },
   created() {
-    this.selfNav = JSON.parse(JSON.stringify(this.navs)).map((item, index) =>
-      Object.assign(item, { active: !index })
+    this.selfNav = JSON.parse(JSON.stringify(this.navs)).map(item =>
+      Object.assign(item, { active: item.name === this.currentMain.name })
     );
   }
 };

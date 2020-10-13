@@ -6,6 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\store\modules\page.js
  */
+import { setSession, getSession } from "@/utils/util";
 import { resourceAction } from "@/api/manage";
 const hasView = (list, name) => list.map(n => n.name).includes(name);
 const getHome = list => {
@@ -21,19 +22,30 @@ const getHome = list => {
     }
   }
 };
+const ORG_TEMP = {
+  mainCurrent: null,
+  currentPage: null,
+  allList: null,
+  tabArr: [],
+  currentView: null
+};
+
+const ObState = (temp = ORG_TEMP) =>
+  new Proxy(temp, {
+    set(obj, prop, value) {
+      setSession("menu", { ...obj, [prop]: value });
+      return Reflect.set(...arguments);
+    }
+  });
+const state = ObState(getSession("menu"));
 export default {
-  state: {
-    mainCurrent: null,
-    currentPage: null,
-    allList: null,
-    tabArr: [],
-    currentView: null
-  },
+  state,
   mutations: {
     setAllList(state, val) {
       state.allList = val;
     },
     setMainCurrent(state, val) {
+      if (state.mainCurrent && state.mainCurrent.name === val.name) return;
       state.mainCurrent = val;
       state.tabArr = [];
       const home = getHome(val.children);
@@ -64,13 +76,13 @@ export default {
             ];
           state.currentView = previous;
         }
-        // console.log(state.tabArr.findIndex((n) => n.name === state.currentView.name));
         state.tabArr = state.tabArr.filter(n => n.name !== val.name);
       }
     }
   },
   actions: {
     async GET_MENU_LIST({ commit }) {
+      if (getSession("menu")) return Promise.resolve(true);
       try {
         const res = await resourceAction("/mock/menu.json");
         commit("setAllList", res);

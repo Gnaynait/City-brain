@@ -6,6 +6,12 @@
  * @Description: In User Settings Edit
  * @FilePath: \safe\src\utils\util.js
  */
+export const setSession = (key, val) => {
+  window.sessionStorage.setItem(key, JSON.stringify(val));
+};
+export const getSession = key => {
+  return JSON.parse(window.sessionStorage.getItem(key)) || undefined;
+};
 export function deepClone(target) {
   // 定义一个变量
   let result;

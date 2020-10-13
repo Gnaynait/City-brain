@@ -1,7 +1,11 @@
 <template>
   <div class="main-content">
     <template v-for="(node, index) in tabArr">
-      <Render :node="node"  v-show="node.name === currentView.name"/>
+      <Render
+        :node="node"
+        v-show="node.name === currentView.name"
+        :key="index"
+      />
     </template>
   </div>
 </template>
@@ -12,8 +16,8 @@ import Render from "../../ModRender";
 export default {
   mixins: [pageMixins],
   components: {
-    Render,
-  },
+    Render
+  }
 };
 </script>
 
