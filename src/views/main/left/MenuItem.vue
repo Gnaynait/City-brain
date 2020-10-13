@@ -7,7 +7,7 @@
  * @FilePath: \City-brain\src\views\main\left\MenuItem.vue
 -->
 <template>
-  <div class="list">
+  <div class="menu" :style="slideOn && 'overflow-y: auto'">
     <List :list="list" v-if="slideOn" />
     <SubList :list="list" v-else />
   </div>
@@ -22,22 +22,22 @@ export default {
   provide() {
     return {
       addTab: this.addTab,
-      changeChoice: this.changeChoice
+      changeChoice: this.changeChoice,
     };
   },
   components: {
     List,
-    SubList
+    SubList,
   },
   props: {
     slideOn: {
       type: Boolean,
-      default: true
+      default: true,
     },
     list: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   methods: {
     addTab(item) {
@@ -47,14 +47,14 @@ export default {
     changeChoice(item) {
       if (this.currentView.name === item.name) return;
       this.$store.commit("changeCurrentView", item);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.list {
-  height: 100%;
+.menu {
+  height: calc(100% - 0.8rem);
   position: relative;
 }
 </style>

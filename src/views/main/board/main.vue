@@ -1,29 +1,26 @@
 <template>
-  <div class="main">
-    <StringCmp :cmp="url" />
+  <div class="main-content">
+    <template v-for="(node, index) in tabArr">
+      <Render :node="node"  v-show="node.name === currentView.name"/>
+    </template>
   </div>
 </template>
 
 <script>
 import pageMixins from "@/mixins/pageMixins";
-import StringCmp from "../../../components/StringCmp";
+import Render from "../../ModRender";
 export default {
   mixins: [pageMixins],
   components: {
-    StringCmp
+    Render,
   },
-  computed: {
-    url() {
-      return `${this.currentView.path}`;
-    }
-  }
 };
 </script>
 
 <style lang="scss" scoped>
-.main {
+.main-content {
   width: 100%;
-  height: 500px;
-  background: steelblue;
+  height: calc(100% - 0.56rem);
+  padding: 0.16rem;
 }
 </style>

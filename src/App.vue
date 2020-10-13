@@ -8,7 +8,6 @@
 -->
 <template>
   <div id="app">
-    <component :is="Cmp" />
     <router-view />
   </div>
 </template>

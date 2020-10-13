@@ -20,16 +20,16 @@ import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
     LeftMenu,
-    Board
+    Board,
   },
-  mixins: [pageMixin]
+  mixins: [pageMixin],
 };
 </script>
 
 <style lang="scss" scoped>
 .main {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 0.8rem);
   position: relative;
   display: flex;
   flex-flow: row nowrap;

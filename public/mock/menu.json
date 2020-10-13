@@ -18,7 +18,7 @@
             "children": [
               {
                 "name": "home",
-                "path": "views/mod/test",
+                "path": "views/mod/home",
                 "title": "首页",
                 "home": true
               }
@@ -46,6 +46,12 @@
             "name": "components",
             "path": "",
             "title": "简单组件"
+          },
+          {
+            "name": "iframe",
+            "type": "iframe",
+            "path": "http://localhost:8181",
+            "title": "iframe"
           }
         ]
       },

@@ -100,9 +100,9 @@ export default {
   box-shadow: 0px 2px 20px rgba($color: #000000, $alpha: 0.05);
   padding: 0 0.16rem;
   position: relative;
-  overflow-x: auto;
   font: 0.16rem/1 "微软雅黑";
   color: #a5afb8;
+
   .inner {
     width: 100%;
     height: 100%;

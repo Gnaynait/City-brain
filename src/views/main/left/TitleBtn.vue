@@ -56,6 +56,7 @@ export default {
   color: #ffffff;
   text-align: center;
   font: 0.18rem "微软雅黑";
+  flex: 1;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

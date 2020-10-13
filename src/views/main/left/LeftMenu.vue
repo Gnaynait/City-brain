@@ -54,6 +54,6 @@ export default {
   flex-flow: column nowrap;
   transition: 0.2s;
   position: relative;
-  // overflow: hidden;
+  justify-content: flex-start;
 }
 </style>
