@@ -34,7 +34,7 @@
         "children": [
           {
             "name": "table",
-            "path": "views/topbar/MainLogo",
+            "path": "views/mod/table",
             "title": "简单表格"
           },
           {

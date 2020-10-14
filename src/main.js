@@ -1,12 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-10-12 15:04:11
- * @LastEditTime: 2020-10-13 18:01:54
- * @LastEditors: your name
+ * @LastEditTime: 2020-10-14 16:30:02
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\main.js
  */
 import Vue from "vue";
+import '@/assets/theme/index.css'
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";

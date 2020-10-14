@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-14 10:09:59
+ * @LastEditTime: 2020-10-14 16:17:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \City-brain\src\views\main\board\main.vue
+-->
 <template>
   <div class="main-content">
     <template v-for="(node, index) in tabArr">

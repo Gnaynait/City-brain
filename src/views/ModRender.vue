@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-14 10:09:59
+ * @LastEditTime: 2020-10-14 16:28:07
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \City-brain\src\views\ModRender.vue
+-->
 <template>
   <div class="render">
     <StringCmp :cmp="node.path" v-if="frontMod" />
@@ -36,5 +44,7 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow-y: auto;
+
 }
 </style>
