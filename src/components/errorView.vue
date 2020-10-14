@@ -7,20 +7,18 @@
  * @FilePath: \City-brain\src\components\errorView.vue
 -->
 <template>
-  <div class="error"> 
+  <div class="error">
     页面未配置！
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {};
 </script>
 
 <style lang="scss" scoped>
-.error{
-    width: 100%;
+.error {
+  width: 100%;
   height: 100%;
   background: #f2f2f4;
   display: flex;

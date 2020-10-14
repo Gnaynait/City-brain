@@ -19,18 +19,18 @@ import List from "./BigNode";
 export default {
   components: {
     List,
-    SubList,
+    SubList
   },
   props: {
     slideOn: {
       type: Boolean,
-      default: true,
+      default: true
     },
     list: {
       type: Array,
-      default: () => [],
-    },
-  },
+      default: () => []
+    }
+  }
 };
 </script>
 

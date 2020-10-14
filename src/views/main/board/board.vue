@@ -15,16 +15,16 @@
 </template>
 
 <script>
-import AllView from '../AllView'
-import Main from './main'
-import NavList from './navList'
+import AllView from "../AllView";
+import Main from "./main";
+import NavList from "./navList";
 export default {
   components: {
     NavList,
     Main,
-    AllView,
-  },
-}
+    AllView
+  }
+};
 </script>
 
 <style lang="scss" scoped>

@@ -45,6 +45,5 @@ export default {
   height: 100%;
   position: relative;
   overflow-y: auto;
-
 }
 </style>

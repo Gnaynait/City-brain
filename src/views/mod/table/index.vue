@@ -22,7 +22,6 @@
         :data="tableData"
         tooltip-effect="dark"
         style="width: 100%"
-    
       >
         <el-table-column type="selection" width="55"> </el-table-column>
         <el-table-column label="日期" width="120">
@@ -33,10 +32,12 @@
         <el-table-column prop="address" label="地址" show-overflow-tooltip>
         </el-table-column>
       </el-table>
-    <div style="display:flex;flex-flow:row nowrap;justify-content: flex-end; margin-top:20px">
+      <div
+        style="display:flex;flex-flow:row nowrap;justify-content: flex-end; margin-top:20px"
+      >
         <el-pagination background layout="prev, pager, next" :total="1000">
-      </el-pagination>
-    </div>
+        </el-pagination>
+      </div>
     </Container>
   </div>
 </template>
@@ -45,7 +46,7 @@
 import Container from "@/layout/container";
 export default {
   components: {
-    Container,
+    Container
   },
   data() {
     return {
@@ -53,29 +54,29 @@ export default {
         {
           date: "2016-05-02",
           name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
+          address: "上海市普陀区金沙江路 1518 弄"
         },
         {
           date: "2016-05-04",
           name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
+          address: "上海市普陀区金沙江路 1517 弄"
         },
         {
           date: "2016-05-01",
           name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
+          address: "上海市普陀区金沙江路 1519 弄"
         },
         {
           date: "2016-05-03",
           name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-        },
-      ],
+          address: "上海市普陀区金沙江路 1516 弄"
+        }
+      ]
     };
   },
   created() {
     this.tableData = [...this.tableData, ...this.tableData];
-  },
+  }
 };
 </script>
 

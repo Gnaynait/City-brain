@@ -97,7 +97,7 @@ export default {
       onView: false,
       text: "",
       typein: false,
-      searchMatch: [],
+      searchMatch: []
     };
   },
   watch: {},
@@ -106,16 +106,16 @@ export default {
   },
   computed: {
     subStyle(sitem) {
-      return (sitem) => {
-        const nameList = this.tabArr.map((n) => n.name);
+      return sitem => {
+        const nameList = this.tabArr.map(n => n.name);
         return {
           color: nameList.includes(sitem.name) && "#2c64ff",
           opacity: sitem.children && "0.5",
           cursor: sitem.children ? "not-allowed" : "pointer",
-          pointerEvents: sitem.children && "none",
+          pointerEvents: sitem.children && "none"
         };
       };
-    },
+    }
   },
   mounted() {},
   methods: {
@@ -139,12 +139,12 @@ export default {
         }
         return arr;
       };
-      const allMatchChildren = searchChild(children).filter((node) =>
+      const allMatchChildren = searchChild(children).filter(node =>
         node.title.includes(str)
       );
       const searchList = allMatchChildren.reduce((tol, item) => {
-        if (tol.map((n) => n.name).includes(item.top.name)) {
-          const current = tol.find((n) => n.name === item.top.name);
+        if (tol.map(n => n.name).includes(item.top.name)) {
+          const current = tol.find(n => n.name === item.top.name);
           current.leaf || (current.leaf = []);
           current.leaf.push(item);
         } else {
@@ -174,7 +174,7 @@ export default {
       if (this.typein) return;
       this.onView = false;
       this.$store.commit("setCurrentHover", null);
-    },
+    }
   },
   created() {
     this.$bus.$on("LEAVE_NAV", () => {
@@ -184,7 +184,7 @@ export default {
         clearTimeout(tid);
       }, 200);
     });
-  },
+  }
 };
 </script>
 
@@ -205,8 +205,8 @@ export default {
   // border: 1px solid rgba($color: #ffffff, $alpha: 0.35);
 }
 ::v-deep .input__inner:focus {
-    border-color: #2c64ff;
-    outline: 0;
+  border-color: #2c64ff;
+  outline: 0;
 }
 .all-view {
   width: 15.2rem;

@@ -27,55 +27,55 @@
 </template>
 
 <script>
-import Container from '@/layout/container'
+import Container from "@/layout/container";
 export default {
   components: {
-    Container,
+    Container
   },
   computed: {
     blockStyle() {
       return function(item) {
-        return { width: item.w }
-      }
-    },
+        return { width: item.w };
+      };
+    }
   },
   data() {
     return {
       blocks: [
         {
-          title: '班次执行计划',
-          w: '50%',
-          dindex: 'bczx',
+          title: "班次执行计划",
+          w: "50%",
+          dindex: "bczx"
         },
         {
-          title: '出车率',
-          w: '30%',
-          dindex: 'ccl',
+          title: "出车率",
+          w: "30%",
+          dindex: "ccl"
         },
         {
-          title: '当日平均速度',
-          w: '20%',
-          dindex: 'drpjsd',
+          title: "当日平均速度",
+          w: "20%",
+          dindex: "drpjsd"
         },
         {
-          title: '总里程',
-          w: '33.3%',
-          dindex: 'zlc',
+          title: "总里程",
+          w: "33.3%",
+          dindex: "zlc"
         },
         {
-          title: '平均发车时间',
-          w: '33.3%',
-          dindex: 'pjfcsj',
+          title: "平均发车时间",
+          w: "33.3%",
+          dindex: "pjfcsj"
         },
         {
-          title: '正点率',
-          w: '33.3%',
-          dindex: 'zdl',
-        },
-      ],
-    }
-  },
-}
+          title: "正点率",
+          w: "33.3%",
+          dindex: "zdl"
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>

@@ -28,17 +28,17 @@ export default {
   props: {
     styleObj: {
       type: Object,
-      default: () => {},
+      default: () => {}
     },
     hasTitle: {
       type: String,
-      default: '',
-    },
+      default: ""
+    }
   },
   created() {
-    console.log(this.$slots)
-  },
-}
+    console.log(this.$slots);
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -68,7 +68,7 @@ export default {
       align-items: center;
       margin-bottom: 0.16rem;
       > span {
-        font: bold 0.16rem/0.44rem '微软雅黑';
+        font: bold 0.16rem/0.44rem "微软雅黑";
         color: #000022;
       }
     }

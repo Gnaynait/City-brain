@@ -7,7 +7,7 @@
  * @FilePath: \City-brain\src\views\topbar\MainNav.vue
 -->
 <template>
-  <div class="main-nav" >
+  <div class="main-nav">
     <div class="nav-button" @mouseleave="mouseleaveHandle">
       <div class="nav-box" v-for="(nav, index) in selfNav" :key="index">
         <ol
@@ -26,60 +26,60 @@
 </template>
 
 <script>
-import pageMixins from '@/mixins/pageMixins'
+import pageMixins from "@/mixins/pageMixins";
 export default {
   mixins: [pageMixins],
 
   props: {
     navs: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
 
   data() {
     return {
-      selfNav: [],
-    }
+      selfNav: []
+    };
   },
   computed: {
     navStyle() {
       return function(item) {
         return (this.currentMain && item.name === this.currentMain.name) ||
           (this.currentHover && item.name === this.currentHover.name)
-          ? { color: '#ffffff', background: '#214094' }
-          : { color: '#C0C4CC' }
-      }
-    },
+          ? { color: "#ffffff", background: "#214094" }
+          : { color: "#C0C4CC" };
+      };
+    }
   },
   methods: {
     mouseleaveHandle() {
-      this.$emit('mouseleaveHandle')
+      this.$emit("mouseleaveHandle");
     },
     mouseoverHandle(item) {
-      this.selfNav = this.selfNav.map((n) => ({
+      this.selfNav = this.selfNav.map(n => ({
         ...n,
-        hover: n.name === item.name,
-      }))
-      this.$emit('changeHoverNav', item)
+        hover: n.name === item.name
+      }));
+      this.$emit("changeHoverNav", item);
     },
     changeNav(item) {
-      this.selfNav = this.selfNav.map((n) => ({
+      this.selfNav = this.selfNav.map(n => ({
         ...n,
-        active: n.name === item.name,
-      }))
-      this.$emit('changeNav', item)
-    },
+        active: n.name === item.name
+      }));
+      this.$emit("changeNav", item);
+    }
   },
   created() {
-    this.selfNav = JSON.parse(JSON.stringify(this.navs)).map((item) =>
+    this.selfNav = JSON.parse(JSON.stringify(this.navs)).map(item =>
       Object.assign(item, {
         active: item.name === this.currentMain.name,
-        hover: false,
+        hover: false
       })
-    )
-  },
-}
+    );
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -97,7 +97,7 @@ export default {
       position: relative;
       > ol {
         padding: 0.28rem 0.2rem;
-        font: 0.2rem/1 '微软雅黑';
+        font: 0.2rem/1 "微软雅黑";
         color: #c0c4cc;
         cursor: pointer;
         transition: 0.5s;

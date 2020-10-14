@@ -35,22 +35,22 @@
 import Container from "@/layout/container";
 export default {
   components: {
-    Container,
+    Container
   },
   data() {
     return {
-      dialogVisible: false,
+      dialogVisible: false
     };
   },
   methods: {
     handleClose(done) {
       this.$confirm("确认关闭？")
-        .then((_) => {
+        .then(_ => {
           done();
         })
-        .catch((_) => {});
-    },
-  },
+        .catch(_ => {});
+    }
+  }
 };
 </script>
 

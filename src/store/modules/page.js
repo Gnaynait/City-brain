@@ -28,7 +28,7 @@ const ORG_TEMP = {
   allList: null,
   tabArr: [],
   currentView: null,
-  currentHover:null,
+  currentHover: null
 };
 
 const ObState = (temp = ORG_TEMP) =>
@@ -45,9 +45,9 @@ export default {
     setAllList(state, val) {
       state.allList = val;
     },
-    setCurrentHover(state,val){
-      console.log("SSSS",val);
-      state.currentHover=val
+    setCurrentHover(state, val) {
+      console.log("SSSS", val);
+      state.currentHover = val;
     },
     setMainCurrent(state, val) {
       if (state.mainCurrent && state.mainCurrent.name === val.name) return;

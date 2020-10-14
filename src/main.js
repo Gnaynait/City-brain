@@ -7,7 +7,7 @@
  * @FilePath: \City-brain\src\main.js
  */
 import "@/assets/style/index.less";
-import '@/assets/theme/index.css'
+import "@/assets/theme/index.css";
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";

@@ -20,13 +20,13 @@ import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
     LeftMenu,
-    Board,
+    Board
   },
   mixins: [pageMixin],
   provide() {
     return {
       addTab: this.addTab,
-      changeChoice: this.changeChoice,
+      changeChoice: this.changeChoice
     };
   },
   methods: {
@@ -37,8 +37,8 @@ export default {
     changeChoice(item) {
       if (this.currentView.name === item.name) return;
       this.$store.commit("changeCurrentView", item);
-    },
-  },
+    }
+  }
 };
 </script>
 

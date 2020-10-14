@@ -20,7 +20,7 @@ export default {
     currentView() {
       return this.$store.state.page.currentView;
     },
-    currentHover(){
+    currentHover() {
       return this.$store.state.page.currentHover;
     }
   }
