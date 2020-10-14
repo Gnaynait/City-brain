@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-10-12 15:04:11
- * @LastEditTime: 2020-10-13 17:14:59
+ * @LastEditTime: 2020-10-14 19:26:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\store\modules\page.js
@@ -27,7 +27,8 @@ const ORG_TEMP = {
   currentPage: null,
   allList: null,
   tabArr: [],
-  currentView: null
+  currentView: null,
+  currentHover:null,
 };
 
 const ObState = (temp = ORG_TEMP) =>
@@ -43,6 +44,9 @@ export default {
   mutations: {
     setAllList(state, val) {
       state.allList = val;
+    },
+    setCurrentHover(state,val){
+      state.currentHover=val
     },
     setMainCurrent(state, val) {
       if (state.mainCurrent && state.mainCurrent.name === val.name) return;

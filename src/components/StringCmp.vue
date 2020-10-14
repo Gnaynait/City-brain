@@ -1,39 +1,60 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-14 10:09:59
+ * @LastEditTime: 2020-10-14 17:28:55
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \City-brain\src\components\StringCmp.vue
+-->
 <template>
   <component :is="Cmp" param="haha" />
 </template>
 
 <script>
-const AsyncComponent = cmpString => () => ({
-  // 需要加载的组件 (应该是一个 `Promise` 对象)
+import ErrorView from './errorView'
+import AsyncLoading from './asyncLoading'
+
+const AsyncComponent = (cmpString) => () => ({
+  // 需要加载的组件
   component: import(`@/${cmpString}`),
   // 异步组件加载时使用的组件
-  // loading: LoadingComponent,
+  loading: AsyncLoading,
   // 加载失败时使用的组件
-  // error: ErrorComponent,
+  error: ErrorView,
   // 展示加载时组件的延时时间。默认值是 200 (毫秒)
   delay: 200,
-  // 如果提供了超时时间且组件加载也超时了，
   // 则使用加载失败时使用的组件。默认值是：`Infinity`
-  timeout: 3000
-});
+  timeout: 3000,
+})
+// function checkUrl(cmpString) {
+//   return new Promise((reslove, reject) => {
+//     import(`@/${cmpString}`)
+//       .then((res) => {
+//         setTimeout(() => {
+//           reslove(res)
+//         }, 2500)
+//       })
+//       .catch((e) => reject(e))
+//   })
+// }
 export default {
   props: {
     cmp: {
       type: String,
-      default: ""
-    }
+      default: '',
+    },
   },
   watch: {
     cmp(val) {
-      this.Cmp = AsyncComponent(val);
-    }
+      this.Cmp = AsyncComponent(val)
+    },
   },
   data() {
     return {
-      Cmp: AsyncComponent(this.cmp)
-    };
-  }
-};
+      Cmp: AsyncComponent(this.cmp),
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
