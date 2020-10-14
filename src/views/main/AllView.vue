@@ -91,5 +91,6 @@ export default {
   left: 0rem;
   z-index: 999;
   font-size: 16px;
+  color: white;
 }
 </style>

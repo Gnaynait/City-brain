@@ -6,15 +6,15 @@
  * @Description: In User Settings Edit
  * @FilePath: \City-brain\src\main.js
  */
-import Vue from "vue";
+import "@/assets/style/index.less";
 import '@/assets/theme/index.css'
+import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "@/assets/style/index.less";
 import ElementUI from "element-ui";
 import Mixin from "@/mixins";
-import "./styles.scss";
+// import "./styles.scss";
 import "./assets/iconfont/iconfont.css";
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
