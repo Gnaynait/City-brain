@@ -20,9 +20,25 @@ import pageMixin from "@/mixins/pageMixins";
 export default {
   components: {
     LeftMenu,
-    Board
+    Board,
   },
-  mixins: [pageMixin]
+  mixins: [pageMixin],
+  provide() {
+    return {
+      addTab: this.addTab,
+      changeChoice: this.changeChoice,
+    };
+  },
+  methods: {
+    addTab(item) {
+      if (item.children) return;
+      this.$store.commit("addView", item);
+    },
+    changeChoice(item) {
+      if (this.currentView.name === item.name) return;
+      this.$store.commit("changeCurrentView", item);
+    },
+  },
 };
 </script>
 

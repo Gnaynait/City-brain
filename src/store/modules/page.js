@@ -46,6 +46,7 @@ export default {
       state.allList = val;
     },
     setCurrentHover(state,val){
+      console.log("SSSS",val);
       state.currentHover=val
     },
     setMainCurrent(state, val) {

@@ -16,39 +16,21 @@
 <script>
 import SubList from "./SubNode";
 import List from "./BigNode";
-import pageMixins from "@/mixins/pageMixins";
 export default {
-  mixins: [pageMixins],
-  provide() {
-    return {
-      addTab: this.addTab,
-      changeChoice: this.changeChoice
-    };
-  },
   components: {
     List,
-    SubList
+    SubList,
   },
   props: {
     slideOn: {
       type: Boolean,
-      default: true
+      default: true,
     },
     list: {
       type: Array,
-      default: () => []
-    }
-  },
-  methods: {
-    addTab(item) {
-      if (item.children) return;
-      this.$store.commit("addView", item);
+      default: () => [],
     },
-    changeChoice(item) {
-      if (this.currentView.name === item.name) return;
-      this.$store.commit("changeCurrentView", item);
-    }
-  }
+  },
 };
 </script>
 
