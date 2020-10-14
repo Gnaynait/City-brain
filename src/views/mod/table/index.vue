@@ -9,21 +9,34 @@
 <template>
   <div class="table-page">
     <Container>
-      <el-table :data="tableData" style="width: 100%">
-        <el-table-column prop="date" label="日期" width="180">
+      <div style="margin-bottom:20px;overflow:hidden">
+        <div style="float:left">
+          <el-button type="primary">新建</el-button> <el-button>删除</el-button>
+        </div>
+        <div style="float:right;display:flex;flex-flow:row">
+          <el-input></el-input><el-button type="primary">新建</el-button>
+        </div>
+      </div>
+      <el-table
+        ref="multipleTable"
+        :data="tableData"
+        tooltip-effect="dark"
+        style="width: 100%"
+    
+      >
+        <el-table-column type="selection" width="55"> </el-table-column>
+        <el-table-column label="日期" width="120">
+          <template slot-scope="scope">{{ scope.row.date }}</template>
         </el-table-column>
-        <el-table-column prop="name" label="姓名" width="180">
+        <el-table-column prop="name" label="姓名" width="120">
         </el-table-column>
-        <el-table-column prop="address" label="地址"> </el-table-column>
+        <el-table-column prop="address" label="地址" show-overflow-tooltip>
+        </el-table-column>
       </el-table>
-      <el-row>
-        <el-button>默认按钮</el-button>
-        <el-button type="primary">主要按钮</el-button>
-        <el-button type="success">成功按钮</el-button>
-        <el-button type="info">信息按钮</el-button>
-        <el-button type="warning">警告按钮</el-button>
-        <el-button type="danger">危险按钮</el-button>
-      </el-row>
+    <div style="display:flex;flex-flow:row nowrap;justify-content: flex-end; margin-top:20px">
+        <el-pagination background layout="prev, pager, next" :total="1000">
+      </el-pagination>
+    </div>
     </Container>
   </div>
 </template>
@@ -59,6 +72,9 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    this.tableData = [...this.tableData, ...this.tableData];
   },
 };
 </script>

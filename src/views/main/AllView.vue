@@ -109,7 +109,7 @@ export default {
       return (sitem) => {
         const nameList = this.tabArr.map((n) => n.name);
         return {
-          color: nameList.includes(sitem.name) && "blue",
+          color: nameList.includes(sitem.name) && "#2c64ff",
           opacity: sitem.children && "0.5",
           cursor: sitem.children ? "not-allowed" : "pointer",
           pointerEvents: sitem.children && "none",
@@ -156,7 +156,8 @@ export default {
       this.searchMatch = searchList;
     },
     subClick(item) {
-      delete item.top
+      delete item.top;
+      delete item.leaf;
       this.addTab(item);
       this.$store.commit("setCurrentHover", null);
     },
@@ -201,7 +202,11 @@ export default {
 }
 ::v-deep .el-input__inner {
   background-color: #151822;
-  border: 1px solid rgba($color: #ffffff, $alpha: 0.35);
+  // border: 1px solid rgba($color: #ffffff, $alpha: 0.35);
+}
+::v-deep .input__inner:focus {
+    border-color: #2c64ff;
+    outline: 0;
 }
 .all-view {
   width: 15.2rem;

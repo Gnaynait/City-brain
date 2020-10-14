@@ -49,6 +49,7 @@ export default {
   background: white;
   box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.05);
   font-size: 0.16rem;
+  overflow-y: auto;
   .title-container {
     width: 100%;
     height: 100%;

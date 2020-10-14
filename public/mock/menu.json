@@ -39,12 +39,12 @@
           },
           {
             "name": "multiForm",
-            "path": "",
+            "path": "views/mod/multiForm",
             "title": "多模块表单"
           },
           {
             "name": "components",
-            "path": "",
+            "path": "views/mod/base",
             "title": "简单组件"
           },
           {
@@ -63,7 +63,7 @@
         "children": [
           {
             "name": "dialog",
-            "path": "",
+            "path": "views/mod/dialog",
             "title": "对话框"
           },
           {
