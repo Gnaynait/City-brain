@@ -17,6 +17,16 @@
         <slot name="content"></slot>
       </div>
     </div>
+    <div class="nom-container flexcol" v-else-if="col.length > 1" :style="styleObj">
+      <div
+        class="col-container"
+        v-for="(percent, index) in col"
+        :key="index"
+        :style="colStyle(percent)"
+      >
+        <slot :name="'col' + (index+1)"></slot>
+      </div>
+    </div>
     <div class="nom-container" v-else :style="styleObj">
       <slot></slot>
     </div>
@@ -28,16 +38,27 @@ export default {
   props: {
     styleObj: {
       type: Object,
-      default: () => {}
+      default: () => {},
+    },
+    col: {
+      type: Array,
+      default: () => [100],
     },
     hasTitle: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
+  },
+  computed: {
+    colStyle() {
+      return (p) => {
+        return { width: p + "%" };
+      };
+    },
   },
   created() {
     console.log(this.$slots);
-  }
+  },
 };
 </script>
 
@@ -84,6 +105,26 @@ export default {
     height: 100%;
     position: relative;
     padding: 0.16rem;
+    .col-container{
+      height: 100%;
+      border-right: 1px #eeeeee solid;
+      display: flex;
+      flex-flow: column nowrap;
+      box-shadow: 2px 0px 4px #eeeeee;
+      padding-left: 20px;
+      &:last-child{
+        border: 0;
+        box-shadow:0 0 0
+      }
+      &:first-child{
+        padding:0
+      }
+    }
+  }
+  .flexcol{
+    display: flex;
+    flex-flow: row nowrap;
+    
   }
 }
 </style>

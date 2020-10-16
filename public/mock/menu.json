@@ -43,6 +43,11 @@
             "title": "多模块表单"
           },
           {
+            "name": "secondForm",
+            "path": "views/mod/secondForm",
+            "title": "二级表单"
+          },
+          {
             "name": "components",
             "path": "views/mod/base",
             "title": "简单组件"
@@ -68,7 +73,7 @@
           },
           {
             "name": "slideDialog",
-            "path": "",
+            "path": "views/mod/slideDialog",
             "title": "侧滑对话框"
           }
         ]

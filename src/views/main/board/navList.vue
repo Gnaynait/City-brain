@@ -23,7 +23,7 @@
         ></i>
       </ol>
     </transition-group>
-    <div class="cotrl" v-if="showCotrl">dfsf</div>
+    <div class="cotrl" v-if="showCotrl"></div>
   </div>
 </template>
 

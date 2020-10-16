@@ -9,24 +9,29 @@
 <template>
   <div class="base-page">
     <Container>
-      <el-button type="text" @click="dialogVisible = true"
-        >点击打开 Dialog</el-button
-      >
+      <el-radio-group v-model="direction">
+        <el-radio label="ltr">从左往右开</el-radio>
+        <el-radio label="rtl">从右往左开</el-radio>
+        <el-radio label="ttb">从上往下开</el-radio>
+        <el-radio label="btt">从下往上开</el-radio>
+      </el-radio-group>
 
-      <el-dialog
-        title="创建新线路"
-        :visible.sync="dialogVisible"
-        width="600"
+      <el-button
+        @click="drawer = true"
+        type="primary"
+        style="margin-left: 16px;"
+      >
+        点我打开
+      </el-button>
+
+      <el-drawer
+        title="我是标题"
+        :visible.sync="drawer"
+        
         :before-close="handleClose"
       >
-        <span>这是一段信息</span>
-        <span slot="footer" class="dialog-footer">
-          <el-button @click="dialogVisible = false">取 消</el-button>
-          <el-button type="primary" @click="dialogVisible = false"
-            >确 定</el-button
-          >
-        </span>
-      </el-dialog>
+        <span>我来啦!</span>
+      </el-drawer>
     </Container>
   </div>
 </template>
@@ -35,22 +40,23 @@
 import Container from "@/layout/container";
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
-      dialogVisible: false
+      drawer: false,
+      direction: "rtl",
     };
   },
   methods: {
     handleClose(done) {
       this.$confirm("确认关闭？")
-        .then(_ => {
+        .then((_) => {
           done();
         })
-        .catch(_ => {});
-    }
-  }
+        .catch((_) => {});
+    },
+  },
 };
 </script>
 
